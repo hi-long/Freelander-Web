@@ -1,0 +1,66 @@
+.suggestion {
+    display: inline-block;
+    position: relative;
+    
+    max-height: 15rem;
+
+    margin-top: 1.5rem;
+    border-radius: 5px;
+    
+    background-color: antiquewhite;
+    overflow-y: auto;
+}
+
+.no-suggestion {
+    position: relative;     
+    width: 100%;
+    text-align: center;
+    margin-top: 1.5rem;
+    border: 2px solid indianred;
+    border-radius: 5px;
+    
+    background-color: white;
+    color: indianred;
+}
+
+.suggestion::after,
+.no-suggestion::after {
+    content: '';
+    position: absolute;
+    top: -0.5rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    width: 0; 
+    height: 0; 
+    border-left: 0.5rem solid transparent;
+    border-right: 0.5rem solid transparent;
+    
+    border-bottom: 0.5rem solid blanchedalmond;
+}
+
+.no-suggestion::after {
+    top: calc(-0.5rem - 2px);
+    border-bottom: 0.5rem solid indianred;
+}
+
+.search-tab {
+    position: absolute;
+    max-height: 20rem;
+    width: auto;
+    margin-top: 1.2rem;
+    box-shadow: 0 0 4px #0000007d;
+    background-color: white;
+    overflow: auto;
+}
+
+.search-tab--introduction{
+    position: absolute;
+    width: 92%;
+    max-height: 20rem;
+    margin-top: 0rem;
+    box-shadow: 0 0 4px #0000007d;
+    background-color: white;
+    overflow: auto;
+    z-index: 1;
+}

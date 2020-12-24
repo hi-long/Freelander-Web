@@ -1,0 +1,26 @@
+.main-content {
+    margin-top: 10rem;    
+}
+
+.introduction {
+    width: 80%;
+    margin: auto;
+    height: 15rem;
+    line-height: 15rem;
+    text-align: center;
+    background-image: url('https://images.unsplash.com/photo-1493957988430-a5f2e15f39a3?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80');
+    background-position: center;
+    color: dimgray;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px 1px #0000002e;
+}
+
+.introduction span {    
+    font-family: auto;
+    font-size: 1.8rem;
+    font-style: italic;
+}
+
+.introduction h2 {
+    font-weight: 500;
+}

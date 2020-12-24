@@ -1,0 +1,325 @@
+input {
+    border: 0;
+    padding: 0;
+
+    outline: none;
+}
+
+.incomplete {
+    box-shadow: indianred;
+}
+
+/* --------------- */
+/* NAVBAR          */
+/* --------------- */
+.navbar {
+    width: 150%;
+
+    padding-left: 0.5rem;
+    border: 1px solid #8080804a;
+    border-radius: 1px;
+    
+    background-color: white;
+    outline: none;
+}
+
+/* --------------- */
+/* INTRODUCTION    */
+/* --------------- */
+.introduction__header {
+    height: 2.5rem;
+    width: 70%;
+
+    border: 0;
+    padding-left: 0.5rem;
+    border-radius: 1px;
+    background-color: white;
+    outline: none;
+}
+
+/* --------------- */
+/* PROFILE         */
+/* --------------- */
+.profile__overview {
+    text-align: center;
+    border-bottom: 1px solid;
+    padding: 0.5rem 0;
+}
+
+.profile__overview::placeholder {
+    text-align: center;
+}
+
+.profile__description {
+    width: 100%;
+    margin: 0.5rem 0;
+    resize: none;
+}
+
+.profile__description__linked-account {
+    margin-left: 0.5rem;
+    font-size: 1rem;
+}
+
+.profile__skills {
+    width: 95%;
+    font-size: 1rem;
+    padding: 0.5rem;
+    border: 1px solid gray;
+    border-radius: 0.5rem;
+    margin: 0.5rem 0;
+
+    box-sizing: content-box;
+}
+
+/* --------------- */
+/* SERVICE BUILDER */
+/* --------------- */
+.title-builder {
+    width: 100%;
+}
+
+.service-builder__title {
+    width: 80%;
+
+    padding: 0.5rem;
+    
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0px 0px 3px 0px slategrey;
+    
+    outline: none;
+    resize: none;
+    transition: 0.2s ease-in-out;
+}
+
+.service-builder__job {
+    width: 61%;
+
+    padding: 0.5rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px 0px slategrey;
+
+    outline: none;
+    transition: 0.2s ease-in-out;
+}
+
+.service-builder__category {
+    width: 30%;
+
+    padding: 0.5rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px 0px slategrey;
+
+    outline: none;
+    transition: 0.2s ease-in-out;
+}
+
+.service-builder__category option {
+    padding: 0.5rem;
+}
+
+.service-builder__category:focus, 
+.service-builder__title:focus {
+    border: 0;
+    box-shadow: 0px 0px 7px 0px #957a5e;
+}
+
+.service-builder__submit {
+    padding: 0.5rem 1.5rem;
+    border-radius: 8px;
+
+    background: #1dbf73;
+    color: white;
+
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: center;
+    float: right;
+
+    cursor: pointer;
+}
+
+.service-details__edit {
+    width: 100%;
+    padding: 0.5rem;
+    
+    box-sizing: border-box;
+    resize: none;
+}
+
+input.service-details__edit {
+    font-size: 1.5rem;  
+}
+
+.upload-images__service-details {
+    margin-top: 2rem;
+} 
+
+/* ---------- */
+/* REVIEW     */
+/* ---------- */
+.new-review__content {
+    width: 100%;
+    padding: 0.5rem;
+    resize: none;
+    box-sizing: border-box;
+}
+
+.review-submit {
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    border: 1px solid #1dbf73;
+
+    background: #1dbf73;
+    color: white;
+
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    float: right;
+
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.review-submit:hover {
+    color: indianred;
+    background-color: white;
+    border: 1px solid indianred;
+}
+
+.review-edit {
+    width: 100%;
+    resize: none;
+    margin-top: 1rem;
+}
+
+/* FILTER */
+
+.filter-price {
+    width: 5rem;
+    padding: 0.5rem;
+
+    border: 1px solid grey;
+    background: silver;
+}
+
+.filter-price::-webkit-outer-spin-button,
+.filter-price::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* MESSAGE */
+.upload-photo {
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.messenger-input {
+    height: 2.5rem;
+    width: 85%;
+    padding-left: 0.5rem;
+
+    background-color: #d3d3d342;
+}
+
+.send-message {
+    height: 2.5rem;
+    width: 5rem;
+
+    font-weight: 600;
+
+    color: white;
+    background-color: #1dbf73;
+
+    cursor: pointer;
+
+    transition: 0.2s ease-in-out;
+}
+
+.send-message:active {
+    font-size: 0.4rem;
+}
+
+/* ---------------- */
+/* SERVICE DETAILS  */
+/* ---------------- */
+.title {
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.basic-field {
+    width: 100%;
+
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+
+    font-size: 1rem;
+    box-shadow: 0px 0px 4px 3px #0000001c;
+    resize: none;
+    box-sizing: border-box;
+}
+
+.basic-field:focus {
+    outline: none;
+}
+
+/* ------------ */
+/* AUTH */
+/* ------------ */
+.auth-input {
+    height: 3rem;
+    width: 100%;
+
+    padding: 0rem 0.5rem 0rem 0.5rem;
+    border-bottom: 1px solid lightgrey;
+    
+    font-size: 1.5rem;
+    
+    box-sizing: border-box;
+}
+
+.auth-input:focus {
+    border-bottom: 1px solid indianred;
+}
+
+.auth-input:focus ~ label[for='email'],
+.auth-input:focus ~ label[for='password'],
+.auth-input:focus ~ label[for='retypePassword'] {
+    top: -0.5rem;
+    font-size: 1rem;
+}
+
+.auth-submit {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid lightgray;
+
+    color: lightgray;
+    background-color: white;
+
+    font-size: 1.5rem;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.auth-submit:hover {
+    border-color: #1dbf73;
+    color: #1dbf73;
+}
+
+/* IMAGE UPLOADER */
+.image-uploader {
+    opacity: 0;
+    position: absolute;
+}

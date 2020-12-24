@@ -1,0 +1,47 @@
+.notification {
+    position: fixed;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+
+    margin: auto;
+    display: flex;
+    width: max-content;
+
+    background-color: #2ecc40;
+    border-radius: 5px;
+    z-index: 2;
+}
+
+.noti-icon {
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #229930;
+    padding: 0.5rem;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.notification img {
+    width: 1rem;
+    height: 1rem;
+}
+
+.notification h2 {
+    color: white;
+    line-height: 3rem;
+    margin: 0 0.5rem;
+    font-weight: 400;
+}
+
+.fail {
+    color: white;
+    background-color: indianred;
+}
+
+.fail .noti-icon {
+    background-color: brown;
+}

@@ -1,0 +1,28 @@
+.pagination {
+    border-radius: 20px;
+    padding: 0 1rem;
+    box-shadow: 1px 2px 5px 0px #00000059;
+    background-color: white;
+}
+
+.page-index {
+    width: 1rem;
+    height: 1rem;
+    display: inline-block;
+    margin: 0.5rem;
+    text-align: center;
+    line-height: 1rem;
+    padding: 0.5rem;
+    border-radius: 50%;
+    background-color: lightgray;
+    color: snow;
+    cursor: pointer;
+}
+
+.page-index:hover {
+    background-color: cadetblue;    
+}
+
+.active {
+    background-color: cadetblue;  
+}

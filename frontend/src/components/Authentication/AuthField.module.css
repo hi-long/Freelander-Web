@@ -1,0 +1,70 @@
+.auth-field {
+    position: relative;
+    width: calc(100% - 80px);
+
+    margin: 0 40px 40px 40px;
+}
+
+.label {
+    position: absolute;
+
+    left: 0.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+
+    color: lightgray;
+
+    font-size: 1.5rem;
+
+    transition: 0.2s ease-in-out;
+}
+
+.message {
+    position: absolute;
+    width: 10rem;
+    height: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -11rem;
+    border-radius: 5px;
+    border: 1px solid indianred;
+    line-height: 3rem;
+    text-align: center;
+    background-color: white;
+    color: indianred;
+}
+
+.message::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -0.5rem;
+    transform: translateY(-50%);
+
+    width: 0; 
+    height: 0; 
+    border-top: 0.5rem solid transparent;
+    border-bottom: 0.5rem solid transparent; 
+  
+    border-right:0.5rem solid snow; 
+}
+
+.message img {
+    max-width: 1.5rem;
+    vertical-align: middle;
+}
+
+.up {
+    position: absolute;
+
+    left: 0.5rem;
+    top: -0.5rem;   
+    transform: translateY(-50%);
+
+    color: lightgray;
+
+    font-size: 1.5rem;
+
+    transition: 0.2s ease-in-out;
+    font-size: 1rem;
+}

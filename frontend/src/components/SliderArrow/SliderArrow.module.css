@@ -1,0 +1,35 @@
+.arrow {
+    position: absolute;
+    width: 3rem;
+    height: 3rem;
+    z-index: 1;
+    top: 50%;
+    transform: translateY(-50%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+
+    background-color: white;
+    box-shadow: 0 0 10px 2px #6e6e6e26;
+}
+
+.prev {
+    left: -1rem;
+}
+
+.next {
+    right: -1rem;
+}
+
+.arrow img {
+    max-width: 60%;
+    max-height: 60%;
+    cursor: pointer;
+}
+
+.gallery-arrow  {
+    width: 2rem;
+    height: 2rem;
+}

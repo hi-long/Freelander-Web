@@ -1,0 +1,304 @@
+.container {
+    display: flex;
+    background-color: #beb8b80d;
+    color: black;
+}
+
+.blur {
+    filter: blur(5px);
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    width: 80%;
+    margin: 10rem 10rem auto;
+    margin-bottom: 5rem;
+}
+
+/* -------------------- */
+/* MAIN CONTENT PROFILE */
+/* -------------------- */
+.main-content__profile {
+    position: relative;
+
+    height: fit-content;
+    width: 80%;
+    
+    border-radius: 5px;
+    
+    background-color: white;
+    box-shadow: 3px 3px 8px 2px #00000024;
+}
+
+.cover-edit {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.cover-edit img {
+    cursor: pointer;
+    height: 80px;
+    width: 80px;
+}
+
+.main-content__profile__overview__profile-image:hover ~ div {
+    opacity: 1;
+}
+
+.description__header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.description__header span {
+    color: indianred;
+    cursor: pointer;
+}
+
+/* OVERVIEW */
+.main-content__profile__overview {
+    position: relative;
+    width: 100%;
+    border-radius: 10px;
+    margin: 0 0 2rem;
+    text-align: center;
+}
+
+.main-content__profile__overview * {
+    margin: 0.2rem auto;
+}
+
+.main-content__profile__overview__profile-image {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    margin-top: 1rem;
+}
+
+.main-content__profile__overview__username {
+    margin: 1rem;
+}
+
+.gender {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 2rem;
+}
+
+.gender img {
+    max-width: 2rem;
+    max-height: 2rem;
+    cursor: pointer;
+}
+
+.dob {
+    width: 80%;
+    margin: auto;
+}
+
+.main-content__profile__overview__edit {
+    cursor: pointer;
+}
+
+.main-content__profile__overview__edit__confirm {
+    
+}
+
+/* DESCRIPTION */
+.main-content__description {
+    border-radius: 5px;
+    
+    background-color: white;
+}
+
+.main-content__description div:first {
+    margin: 1rem;
+}
+
+.main-content__description__description {
+    margin: 1rem;
+}
+
+.main-content__description__description p {
+    white-space: pre-wrap;
+}
+
+.main-content__description__description header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-content__description__description span {
+    color: indianred;
+    cursor: pointer;
+}
+
+/* LANGUAGE */
+.main-content__description__language {
+    margin: 1rem;
+}
+
+.main-content__description__language__add {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content__description__language__languages div {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content__description__language__languages span {
+    margin: 0.5rem 0;
+}
+
+/* LINKED ACCOUNT */
+.main-content__description__link-account {
+    margin: 1rem;
+}
+
+.link-account__list {
+    margin-top: 0.9rem;
+}
+
+.linked-account__edit {
+    display: flex;
+    margin-top: 0.5rem;
+}
+
+.linked-account__edit__input {
+    width: 100%;
+    margin: 0;
+    padding: 0.5rem 0.5rem;
+    box-sizing: border-box;
+    overflow: hidden;
+    white-space: nowrap;
+    box-shadow: 0px 0px 4px 1px #0000003d;
+}
+/* SKILLS */
+.main-content__description__skills {
+    margin: 1rem;
+}
+
+.main-content__description__skills__list span{
+    display: inline-block;
+}
+
+/* --------------------- */
+/* MAIN CONTENT BUSINESS */
+/* --------------------- */
+.main-content__business {
+    height: fit-content;
+    
+    border-radius: 10px;
+    
+    background-color: white;
+    box-shadow: 3px 3px 8px 2px #00000024;
+}
+
+.main-content__business__services section {
+    width: 85%;
+    margin: 5rem auto;
+}
+
+.main-content__business__header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: dimgrey;
+    font-weight: 700;
+}
+
+.main-content__business__header__title {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    margin: 0;
+    color: white;
+}
+
+.main-content__reviews__filter {
+    display: flex;
+}
+
+.main-content__reviews__filter div {
+    margin: auto 0.5rem;
+}
+
+/* REVIEW */
+.main-content__reviews__reviews {
+    max-height: 40rem;
+    overflow: auto;
+}
+
+/* NO REVIEWS */
+.no-reviews {
+    padding: 2rem;
+    text-align: center;
+    font-size: 1.2rem;
+    color: dimgray;
+    font-weight: 400;
+}
+
+.no-reviews a {
+    font-weight: 500;
+    animation: sparkling 1s infinite;
+}
+
+@keyframes sparkling {
+    0% {
+        color: #1dbf73;
+        transform: rotate(0);
+    }
+    30% {
+        color: white; 
+        transform: rotate(5deg);
+    }
+    100% {
+        color: #1dbf73; 
+        transform: rotate(0);
+    }
+}
+
+/* --------------- */
+/* SERVICE DETAILS */
+/* --------------- */
+.service-details {
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100vh;
+
+    box-shadow: -5px 5px 10px 0px lightgrey;
+    
+    z-index: 100;
+}
+
+/* CALENDER */
+.dob {
+    border-radius: 5px;
+    box-shadow: 0 0px 8px 0 rgba(16, 36, 94, 0.2);
+}
+
+.dob abbr {
+    text-decoration: none;
+}
+
+.dob button {
+    padding: 0.5rem;
+    border: none;
+    color: dimgray;
+    background-color: white;
+}
+
+.dob button:focus {
+    background-color: lightgray;
+}

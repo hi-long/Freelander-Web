@@ -1,0 +1,9 @@
+.basic-field,
+.basic-field h4 {
+    margin-bottom: 1rem;
+    white-space: pre-wrap;
+}
+
+.basic-field p {
+    white-space: pre-wrap;
+}

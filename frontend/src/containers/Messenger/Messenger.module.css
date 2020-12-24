@@ -1,0 +1,173 @@
+.main {
+    width: 80vw;
+    height: 72vh;
+
+    margin: auto;
+    margin-top: 10rem;
+    border-radius: 10px;
+    box-shadow: 0 0 7px 7px #00000014;
+}
+
+/* ------------ */
+/* HEADER       */
+/* ------------ */
+.header {
+    height: 12%;
+    display: grid;
+    grid-template-columns: 25% 75%;
+    
+    border-bottom: 1px solid lightgray;
+}
+
+/* CONVERSATION */
+.header__conversation {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    border-right: 1px solid lightgray;
+}
+
+.header__conversation h4 {
+    margin: 0;
+}
+
+.header__conversation img {
+    max-height: 2rem;
+    cursor: pointer;
+}
+
+/* USER */
+.header_user {
+    display: flex;
+    align-items: center;
+}
+
+.header_user h2 {
+    margin-left: 1rem;
+
+    line-height: calc(72vh * 12 / 100);
+}
+
+.offline {
+    color: lightslategray;
+}
+
+/* ------------ */
+/* CONVERSATION */
+/* ------------ */
+.content-wrapper {
+    height: 88%;
+    display: flex;
+    /* display: grid;
+    grid-template-columns: 25% 60% 15%; */
+
+}
+
+/* CONVERSATION LIST */
+.conversation-list {
+    width: 25%;
+    height: 100%;
+    border-right: 1px solid lightgray;
+    overflow-y: auto;
+}
+
+/* CONVERSATION */
+.conversation {
+    width: 50%;
+    position: relative;
+
+    padding: 1rem;
+}
+
+.conversation-wrapper {
+    height: 94%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.conversation-origin {
+    display: flex;
+
+    border-radius: 5px;
+    
+    background-color: slategrey;
+    color: white;
+}
+
+.conversation-origin img {
+    max-width: 6rem;
+
+    border-radius: 5px;
+}
+
+.conversation-origin p {
+    padding: 0.5rem 1rem;
+}
+
+/* INPUT */
+.input form {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #d3d3d342;
+}
+
+.input label img {
+    max-width: 2rem;
+    cursor: pointer;
+}
+
+/* RECEIVER */
+.receiver-container {
+    width: calc(25% - 2rem);
+    height: 100%;
+    border-left: 1px solid lightgray;
+}
+
+.receiver {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.receiver img {
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    margin-bottom: 1rem;
+    border-radius: 50%;
+}
+
+.receiver h3 {
+    margin-bottom: 1rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.receiver h3:hover {
+    color: #606060;
+    text-decoration: underline;
+}
+
+.receiver h5 {
+    font-style: italic;
+    font-weight: 400;
+}
+
+/* SCROLL TO BOTTOM */
+.scrollToBottom {
+    position: sticky;
+    bottom: 0;
+    right: 0;
+    float: right;
+}
+
+.scrollToBottom img {
+    max-width: 3rem;
+    cursor: pointer;
+}

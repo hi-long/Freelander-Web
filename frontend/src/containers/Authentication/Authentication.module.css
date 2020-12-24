@@ -1,0 +1,131 @@
+.auth {
+    position: fixed;
+
+    width: 30%;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+
+    background-color: white;
+
+    z-index: 1000;
+}
+
+.behind {
+    height: 0.5rem;
+    width: 90%;
+    background-color: snow;
+
+    margin: auto;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+
+    transform: translateY(-100%);
+    z-index: -1;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.front {
+    position: relative;
+    padding: 5rem 0 1rem 0;
+}
+
+.front::after {
+    content: '';    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 100%;
+    height: 80%;
+
+    border-radius: 40px;
+    background-color: white;
+    transition: 0.1s;
+    z-index: -1;
+}
+
+.front h1 {
+    border-left: 0.5rem solid #1dbf73;
+    margin-bottom: 2rem;
+    padding-left: 2rem;
+    color: #1dbf73;
+}
+
+.front h3 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: 200;
+}
+
+.switcher {
+    position: absolute;
+    max-width: 128px;
+    right: -64px;
+    top: 40px;
+
+    cursor: pointer;
+}
+
+.input-form div,
+.third-party {
+    position: relative;
+    width: calc(100% - 80px);
+
+    margin: 0 40px 40px 40px;
+}       
+
+.third-party {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.party img {
+    max-width: 2rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    box-shadow: 0 0 4px 1px #0000002b;
+    cursor: pointer;
+}   
+
+/* .party img:hover {
+    background-color: indianred;
+} */
+
+
+.email-input,
+.password-input {
+    
+}
+
+/* ------------- */
+/* SIGN UP */
+/* ------------- */
+/* .front--signup::after {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    background-color:  indianred;
+} */
+
+.front--signup h1 {
+    color: indianred;
+    border-color: indianred;
+}
+
+/* FORGOT PASSWORD */
+.forgot-pw {
+    margin-top: -1rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.forgot-pw:hover {
+    color: #1dbf73;
+}

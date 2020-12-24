@@ -1,0 +1,286 @@
+.container {
+    position: relative;
+
+    width: 80vw;
+    height: 100vh;
+    float: right;
+    overflow: auto;
+
+    
+    background-color: ghostwhite;
+}
+
+.blur {
+    filter: blur(1px);
+}
+
+/* ------------- */
+/* NAVBAR        */
+/* ------------- */
+.navbar {
+    position: fixed;
+
+    width: 100%;
+
+    padding: 1rem;
+
+    background-color: #1dbf73;
+
+    z-index: 1;
+}
+
+.navbar img {
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+/* ------------- */
+/* GALLERY       */
+/* ------------- */
+.gallery {
+    width: 80%;
+    margin: auto !important;
+}
+
+/* ------------- */
+/* DETAILS       */
+/* ------------- */
+.details {
+    display: grid;
+    grid-template-columns: 70% 30%;
+
+    margin-top: 5rem;
+}
+
+.details section,
+.related-jobs,
+.reviews__wrapper {
+    /* border: 1px solid lightgray; */
+    box-shadow: 3px 4px 7px 1px darkgrey;
+        
+    border-radius: 10px;
+    background-color: white;
+}
+
+.details__content > div {
+    margin: 2rem 1rem;
+}
+
+.details__content,
+.related-jobs {
+    margin: 0 2rem;
+}
+
+.details__content__category span {
+    display: block;
+}
+
+.details__content__category span a {
+    color: indianred;
+    transition: 0.5s;
+}
+
+.details__content__category span a:hover {
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+/* --------------- */
+/* DETAILS CONTACT */
+/* --------------- */
+
+.details__contact {
+    position: fixed;
+    right: 1rem;
+
+    display: flex;
+    flex-direction: column;
+
+    width: 15%;
+    padding: 0rem 3rem;
+    margin: 0 1rem;
+}
+
+.owner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.owner__cover img {
+    margin: 2rem 0;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+}
+
+.owner__info {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ 
+.owner__info h3 {
+    margin-right: 0.5rem;
+}
+
+.owner__info * {
+    line-height: 2.5rem;
+}
+
+.details__contact__ways button {
+    display: block;
+    width: 100%;
+    height: 2rem;
+    
+    border: none;
+    margin-bottom: 2rem;
+    transition: 0.2s;
+}
+
+.details__contact__ways button:hover {
+    font-size: 1.01rem;
+    color: indianred;
+    background-color: white;
+    border: 1px solid indianred;
+}
+
+.contact {
+    display: flex;
+    height: 2rem;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid #1dbf73;    */
+    margin-bottom: 2rem;
+    box-sizing: border-box;
+    transition: 0.2s;
+}
+
+.contact input {
+    width: 0;
+    transition: 0.2s;
+}
+
+.contact:hover {
+    border: 1px solid #1dbf73;
+}
+
+.contact:hover input {
+    line-height: 2rem;
+    width: 60%;
+    padding: 0.5rem;
+}
+
+.contact button {
+    margin-bottom: 0;
+    transition: 0.2s;
+}
+
+.contact:hover button {
+    width: 40%;
+    border-radius: 0;
+}
+
+/* -------------- */
+/* REVIEWS        */
+/* -------------- */
+.reviews {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    margin: 3rem 2rem 2rem 2rem;    
+}
+
+.reviews__list {
+    max-height: 26rem;
+    overflow-y: auto;
+}
+
+.reviews__header h4 {
+    width: 100%;
+}
+
+.auth-suggestion {
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url('https://images.unsplash.com/photo-1520031926676-6c3ef5d9590a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80');
+    background-position: center;
+    background-size: contain;
+}
+
+.auth-suggestion button {
+    position: relative;
+    padding: 0.5rem;
+    border: 0;
+    background-color: indianred;
+    border-radius: 5px;
+}
+
+.auth-suggestion button:hover {
+    color: indianred;
+    background-color: white;
+}
+
+/* -------------- */
+/* RELATED JOBS   */
+/* -------------- */
+.related-jobs {
+    margin: 3rem 2rem 2rem 2rem;
+}
+
+.related-jobs__list p {
+    margin: 0;
+    padding: 1rem;
+    
+}
+
+.related-jobs__list p:nth-child(even) {
+    background-color: #f9f7f594;
+}
+
+.related-jobs__list h4 {
+}
+
+/* -------------- */
+/* ON EDIT        */
+/* -------------- */
+.related-jobs__list {
+    max-height: 20rem;
+    overflow-y: auto;
+}
+
+.related-jobs__list h2,
+.reviews h2 {
+    margin: 0;
+    
+    padding: 1rem;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    
+    color: white;
+    background-color: #1dbf73;
+
+    box-sizing: border-box;
+}
+
+.image-uploader {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 4px 2px #00000030;
+
+    cursor: pointer;
+}
+
+.no-review {
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+}

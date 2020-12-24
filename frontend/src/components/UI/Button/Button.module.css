@@ -1,0 +1,157 @@
+button {
+    cursor: pointer;
+    outline: none;
+
+    font-weight: 600;
+    
+    color: white;
+    background-color: #1dbf73;
+
+    transition: 00.2s;
+}
+
+button:active{
+    font-size: small;
+}
+
+button img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* ------------- */
+/* NAVBAR        */
+/* ------------- */
+.navbar {
+    height: 100%;
+    width: 50%;
+
+    border: 0;
+    border-radius: 1px;
+    
+}
+
+.navbar__join-button {
+    width: 120%;
+    height: 1.5rem;
+
+    border: 1px solid #80c7a6;
+    border-radius: 0.2rem;
+}
+
+/* ------------- */
+/* INTRODUCTION  */
+/* ------------- */
+.introduction__header {
+    height: 2.6rem;
+    width: 20%;
+
+    border: 0;
+    border-radius: 1px;    
+}
+
+/* --------------- */
+/* POPULAR SERVICES*/
+/* --------------- */
+.popular-services__carousel_switch {
+    position: absolute;
+    top: 50%;
+    width: 3rem;
+    height: 3rem;
+    
+    padding: 0.5rem;
+    border: 3px solid darkgray;
+    border-radius: 50%;
+
+    vertical-align: middle;
+    transform: translate(-50%, -50%);
+    
+    background-color: white;
+    z-index: 1;
+}
+
+/* ------------- */
+/* INVITATION    */
+/* ------------- */
+.invitation {
+    padding: 1rem 1.5rem;
+    border: 0;
+    border-radius: 5px;
+}
+
+/* ------------- */
+/* PROFILE       */
+/* ------------- */
+.profile__overview {
+    padding: 0.5rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    margin: 0 0.5rem !important;
+    transition: 0.2s ease;
+}
+
+.profile__description__linked-account {
+    border: none;
+}
+
+.profile__skills__edit {
+    padding: 0.5rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    transition: 0.2s ease;
+}
+
+.profile-edit__confirm {
+    width: 100%;
+    padding: 1.2rem;
+    margin-top: 1rem;
+    border: none;
+}
+
+.profile-edit__cancel {
+    width: 100%;
+    padding: 1.2rem;
+    margin-top: 0.1rem;
+    border: none;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+/* --------------- */
+/* SERVICE BUILDER */
+/* --------------- */
+.create-service {
+    padding: 1rem;
+    border: none;
+}
+
+.profile__overview:hover,
+.profile__skills__edit:hover,
+.profile__description__linked-account:hover,
+.create-service:hover  {
+    background-color: white;
+    box-shadow: 1px 1px #80c7a6;
+    color: #80c7a6;
+}
+
+.filter-apply {
+    border: none;
+    width: 5rem;
+    border-radius: 2px;
+    box-shadow: 0 0 3px 3px #2b735114;
+
+    transition: 0.1s ease-in-out;
+}   
+
+.filter-apply:active {
+    font-size: 0.6rem;
+}
+
+/* MESSENGER */
+.message-input {
+    width: 15%;
+    height: 2.5rem;
+    border: 0;
+}

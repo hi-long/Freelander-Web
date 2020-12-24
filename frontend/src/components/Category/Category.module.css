@@ -1,0 +1,25 @@
+.category {
+    width: 80%;
+
+    margin: 5rem auto;
+}
+
+.category__header__title {
+    font-weight: 300;
+}
+
+.category__header {
+    display: flex;
+    justify-content: space-between;
+
+    line-height: 5rem;
+}
+
+.intro__popular-services .category {
+    width: 100% !important;
+    margin: 2rem !important;
+}
+
+.service-builder {
+    margin: 2rem auto;
+}

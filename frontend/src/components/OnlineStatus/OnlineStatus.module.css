@@ -1,0 +1,21 @@
+.online-status {
+    padding: 0.5rem;
+    border-radius: 50%;
+}
+
+.online-status img {
+    width: 2rem;
+    height: 2rem;
+}
+
+.online {
+    background-color: #64b999;
+}
+
+.offline {
+    background-color: dimgray;
+}
+
+.header-user {
+    margin-left: 1rem;
+}

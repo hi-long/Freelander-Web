@@ -1,0 +1,222 @@
+.navigation-bar {
+    display: flex;
+
+    height: 5rem;
+    width: 80%;
+    
+    margin: auto;
+    
+    align-items: center;
+    justify-content: space-between;
+
+    color: black;
+}
+
+.navigation-bar li {
+    position: relative;
+    display: inline-block;
+    margin-right: 1.5rem;
+    line-height: 2.5rem;
+
+    font-weight: 600;
+}
+
+.navigation-bar .routing-link img,
+.notification-wrapper img {
+    max-width: 2rem;
+    max-height: 2rem;
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.navigation-bar .routing-link:hover {
+    color: #1dbf73;
+}
+
+.navigation-bar .routing-link::after,
+.switcher::after {
+    content: attr(support);
+    
+    width: max-content;
+    height: 2rem;
+    
+    display: flex;
+    align-items: center;
+    
+    position: absolute;
+    bottom: -1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    
+    padding: 0.2rem 0.5rem;
+    border-radius: 5px;
+    
+    background-color: black;
+    opacity: 0;
+    
+    transition: 0.2s;
+    z-index: -1;
+}
+
+.navigation-bar .routing-link:hover::after,
+.switcher:hover::after {
+    bottom: -3.2rem;
+    opacity: 1;
+    z-index: 2;
+}
+
+.navigation-bar .routing-link::before,
+.switcher::before {
+    content: '';
+    
+    width: 0; 
+    height: 0; 
+    
+    position: absolute;
+    bottom: -0rem;
+    left: 50%;
+    transform: translateX(-50%);
+    
+    border-left: 0.4rem solid transparent;
+    border-right: 0.4rem solid transparent;
+    
+    border-bottom: 0.4rem solid black;
+    
+    opacity: 0;
+    transition: 0.2s;
+    z-index: -1;
+}
+
+.navigation-bar .routing-link:hover::before,
+.switcher:hover::before {
+    bottom: -0.8rem;
+    opacity: 1;
+    z-index: 2;
+}
+
+.switcher {
+    vertical-align: middle;
+}
+
+.switcher:hover {
+    color: #1dbf73;
+    cursor: pointer;
+}
+
+.navigation-bar ul {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    line-height: 2rem;
+}
+
+.navigation-bar__left {
+
+}
+
+.navigation-bar__left__header {
+    color: slategray;
+
+    font-family: 'Carter One', cursive;
+    font-size: 1.7rem;
+    line-height: 2rem;
+    vertical-align: middle;
+}
+
+.profile-image {
+    display: inline-block;
+    vertical-align: middle;
+
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-left: 2rem;
+
+    padding: 0.1rem;
+    border: 1px solid darkslategray;
+    border-radius: 50%;
+
+    cursor: pointer;
+}
+
+/* TOGGLE */
+.toggle-util {
+    position: absolute;
+    top: 3.5rem;
+    right: 0;
+    width: 10rem;
+
+    border-radius: 5px;
+
+    background-color: white;
+    
+    box-shadow: 0px 1px 4px 2px dimgrey;
+}
+
+.toggle-util li {
+    display: block;
+
+    padding: 0.2rem 1.8rem;
+
+    font-weight: 400;
+
+    color: darkslategray;
+    text-align: center;
+    
+    margin-right: 0;
+    
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.toggle-util li:hover {
+    color: cadetblue;
+    border-left: 0.5rem solid cadetblue;
+}
+
+.notification-list {
+    position: absolute;
+    top: 3.3rem;
+    width: 25rem;
+    max-height: 20rem;
+    transform: translateX(-50%);
+
+    border-radius: 5px;
+    border: 1px solid lightslategray;
+    background-color: white;
+
+    overflow: auto;
+}
+
+.notification {
+    padding: 0.5rem;
+    
+    cursor: pointer;
+}
+
+.notification h4 {
+    font-weight: 200;
+}
+
+.unseen h4 {
+    font-weight: 800;
+}
+
+.notification:hover {
+    background-color: whitesmoke;
+}
+
+.time {
+    font-size: 0.9rem;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.notification a {
+    color: indianred;
+}
+
+.notification a:hover {
+    color: #1dbf73;
+    text-decoration: underline;
+}

@@ -1,0 +1,32 @@
+.services-bar {
+    width: 100%;
+    height: 2.5rem;
+
+    color: white;
+    background-color:#353535;
+}
+
+.services-bar__content {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+.services-bar__content span {
+    display: inline-block;
+    text-align: center;
+    
+    line-height: 2.5rem;
+
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.15s ease-in-out;
+}
+
+.services-bar__content span:hover {
+    color: white;
+    background-color: slategray;
+    font-size: larger;
+}

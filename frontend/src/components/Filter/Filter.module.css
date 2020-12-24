@@ -1,0 +1,47 @@
+.container {
+    position: relative;
+    width: fit-content;
+    background-color: white;
+    border: 1px solid;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.container span {
+    margin: 1.5rem 0;
+}
+
+.container span:last-child {
+    margin-left: 1rem;
+}
+
+.container img {
+    max-width: 1rem;
+    display: inline-block;
+    vertical-align: middle;
+    transition: 0.2s ease-in-out;
+}
+
+.browse-filter {
+    padding: 0.5rem 1rem;
+    margin-right: 0.5rem;
+}
+
+.profile-filter {
+    padding: 0.5rem 1rem;
+    margin-right: 0.5rem;
+
+    font-weight: 400;
+}
+
+.filter__arrow-down img {
+    transform: rotate(180deg);
+}
+
+.advanced-filter {
+    display: flex;
+    position: absolute;
+    bottom: -2.5rem;
+    left: 0;
+}
+

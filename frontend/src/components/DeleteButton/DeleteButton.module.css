@@ -1,0 +1,44 @@
+.delete-button {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+
+    width: 3rem;
+    
+    display: flex;
+    border-radius: 40px;
+    padding: 0.2rem;
+    background: white;
+    color: snow;
+
+    transition: 0.5s;
+}
+
+.delete-button--active {
+    width: auto;
+}
+
+.delete-button img {
+    max-width: 3rem;
+    max-height: 3rem;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.trigger img {
+    margin-right: 0.5rem;
+}
+
+.trigger--active img {
+    transform: rotate(360deg);
+}
+
+.confirm {
+    transform: translateX(-100%);
+    z-index: -1;
+}
+
+.confirm--active {
+    transform: translateX(0);
+    z-index: 1;
+}

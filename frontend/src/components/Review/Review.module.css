@@ -1,0 +1,50 @@
+.user-review {
+    padding: 0.5rem;
+    margin: 1rem;
+
+    border-top: 1px solid gainsboro;
+
+    background-color: white;
+}
+
+.review {
+    position: relative;
+}
+
+.review:hover {
+    background-color: gainsboro;
+    cursor: pointer;
+}
+
+.review p {
+    margin: 0.5rem 0;
+    white-space: pre-wrap;
+    word-break: break-all;
+}
+
+.review .edit-and-delete {
+    
+    position: absolute;
+    top: 1.5rem;
+    right: 0.5rem;
+
+}
+
+.review .edit-and-delete img {
+    max-width: 1rem;
+    max-height: 1rem;
+    margin: 0 0.5rem;
+    transition: 0.2s;
+}
+
+.review .edit-and-delete img:hover {
+    max-width: 1.5rem;
+    max-height: 1.5rem;
+}
+
+.review i {
+        font-size: 0.9rem;
+    color: dimgray;
+}
+
+

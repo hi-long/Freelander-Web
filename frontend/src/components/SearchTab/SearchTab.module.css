@@ -1,0 +1,14 @@
+.navbar__search-tab__bar {
+    display: flex;
+    width: 135%;
+    height: 2rem;
+}
+
+.navbar__search-tab__suggestions-results {
+    border-radius: 5px;
+}
+
+.introduction__header__search-tab {
+    height: 2.5rem;
+    margin: 1.5rem 0;
+}

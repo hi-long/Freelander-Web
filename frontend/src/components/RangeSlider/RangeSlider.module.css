@@ -1,0 +1,60 @@
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 15px;
+  border-radius: 5px;  
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%; 
+  background: #4CAF50;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #4CAF50;
+  cursor: pointer;
+}
+
+.price {
+  width: 76%;
+}
+
+.slider-container label {
+  position: relative;
+
+  padding: 0.2rem 0.5rem;
+  margin-right: 1rem;
+  border-radius: 3px;
+
+  background-color: #7da4aa;
+  color: white;
+}
+
+.slider-container label::after {
+  content: '';
+  position: absolute;
+  right: -0.5rem;
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  width: 0; 
+  height: 0; 
+  border-top: 0.5rem solid transparent;
+  border-bottom: 0.5rem solid transparent; 
+  
+  border-left:0.5rem solid #7da4aa; 
+}

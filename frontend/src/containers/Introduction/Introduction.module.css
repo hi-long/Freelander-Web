@@ -1,0 +1,121 @@
+.fade {
+    filter: blur(1px);
+}
+
+/* ----------------- */
+/* INTRODUCTION      */
+/* ----------------- */
+.introduction {
+    width: 100%;
+    height: 100vh;
+    background-color: darkgray;
+
+    background-image: url("https://images.unsplash.com/photo-1474291102916-622af5ff18bb?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    z-index: -1;
+}
+
+.introduction__header {
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 32rem;
+    color: white;
+}
+
+.introduction__header__keywords {
+    display: flex;
+    align-items: center;
+}
+
+/* ----------------- */
+/* POPULAR SERVICES  */
+/* ----------------- */
+.popular-services {
+    margin: 5rem 10%;
+}
+
+.popular-services__carousel {
+  
+}
+
+/* ----------------- */
+/* ALL SERVICES      */
+/* ----------------- */
+.all-services {
+    margin: 5rem 10%;
+}
+
+.all-services__list {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: auto auto;
+    height: 18rem;
+    background-color: white;
+
+    box-shadow: 0 0 14px 2px #d0eed545;
+}
+
+.all-services__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.all-services__item img {
+    max-width: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.all-services__item hr {
+    width: 20%;
+    background: gray;
+    margin-bottom: 0.5rem;
+    transition: 0.2s ease-in-out;
+}
+
+.all-services__item:hover hr {
+    width: 50%;
+    background-color: #1dbf73;
+}
+
+/* ----------------- */
+/* INVITATION        */
+/* ----------------- */
+.invitation {
+    position: relative;
+
+    height: 20rem;
+    margin: 5rem 10%;
+
+    color: white    ;    
+    background-color: beige;
+    background-image: url("https://fiverr-res.cloudinary.com/q_auto,f_auto,w_1400,dpr_2.0/v1/attachments/generic_asset/asset/50218c41d277f7d85feeaf3efb4549bd-1599072608129/bg-signup-1400-x2.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.invitation--centered {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+}
+
+.invitation--centered h2 {
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.invitation--centered h2 i {
+    font-size: 2rem;
+    font-family: auto;
+}

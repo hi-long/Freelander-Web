@@ -1,0 +1,118 @@
+.message {
+    position: relative;
+    display: flex;
+}
+
+.me h4, 
+.me .status-and-name span {
+    margin-right: 1rem;
+}
+
+.message span {
+    margin-left: 0.5rem;
+    font-size: 0.9rem;
+    font-style: italic;
+    color: dimgray;
+}
+
+.me span {
+    margin-right: 0.6rem;   
+}
+
+.receive {
+
+}
+
+.user-wrapper {
+    width: 100%;
+    margin: 0.5rem;
+
+    text-overflow: ellipsis;
+    overflow: hidden; 
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.user-wrapper img {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-right: 0.5rem;
+
+    border-radius: 50%;
+}
+
+.user {
+    display: flex;
+}
+
+.me .user {flex-direction: row-reverse;}
+
+.status-and-name {
+    display: flex;
+    align-items: center;
+    margin-left: 0.5rem;
+}
+
+.offline {
+    color: lightslategray;
+}
+
+.me .status-and-name {
+    flex-direction: row-reverse;
+}
+
+.status {
+    width: 0.5rem;
+    height: 0.5rem;
+    
+    margin-right: 0.2rem;
+    margin-left: 0.2rem;
+    border-radius: 50%;
+
+    background-color: green;
+}
+
+.user-chat {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.me .user-chat {
+    justify-content: flex-end;
+}
+
+.user-chat p::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: calc(1.25rem - 5px);
+    width: 0; 
+    height: 0; 
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    
+    border-bottom: 5px solid #7091ad;
+}
+
+.me .user-chat p::before {
+    left: calc(100% + -2rem + 5px);
+    border-bottom: 5px solid  #64b999;
+}
+
+.user-chat p {
+    max-width: fit-content;
+    min-width: 1.5rem;
+    margin-top: 1rem;
+    margin-right: 0.5rem;
+    border-radius: 5px;
+    
+    color: white;
+    padding: 0.5rem;
+    background-color: #7091ad;
+    white-space: initial;   
+    word-wrap: break-word !important;
+    word-break: break-all;
+}
+
+.me .user-chat p {background-color: #64b999;}

@@ -1,0 +1,48 @@
+.box-chat {
+    position: relative;
+    display: flex;
+    cursor: pointer;
+}
+
+.selected {
+    background-color: linen;
+}
+
+.unread {
+    background-color: cadetblue;
+}
+
+.user {
+    width: 70%;
+    padding: 0.5rem;
+    display: flex;
+    /* justify-content: space-between; */
+    
+    text-overflow: ellipsis;
+    overflow: hidden; 
+    white-space: nowrap;
+}
+
+.user h4:hover {
+    color: indianred;
+}
+
+.user img {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-right: 0.5rem;
+    
+    border-radius: 50%;
+}
+
+.box-chat .last-active {
+    width: 30%;
+    
+    padding: 0.5rem;
+    font-size: 0.8rem;
+    font-style: italic;
+}
+
+.unseen {
+    background-color: steelblue;
+}
